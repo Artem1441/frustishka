@@ -1,0 +1,26 @@
+.goods {
+    margin-top: 100px;
+}
+
+.basket-hidden {
+    top: 0;
+} 
+
+.goods-choice{
+    padding-top: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.goods-choice ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.goods-choice li{
+    padding: 10px;
+    border: 1px solid rgba(0,0,0, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+}

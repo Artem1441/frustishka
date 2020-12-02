@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фрукты</title>
+
+    <link rel="stylesheet" type='text/css' href="css/animate.css">
+    <link rel='stylesheet' type='text/css' href='css\reset.css'>
+    <link rel="stylesheet" type="text/css" href='css\style.css'>
+    <link rel="stylesheet" type="text/css" href='css\fruits.css'>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,400;1,700;1,900&family=Source+Sans+Pro:wght@200;400;700;900&family=Spectral+SC:ital,wght@1,800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="basket-hidden">
+        <div class='basket'></div>
+    </div>
+
+    <div class="all-hd">
+        <header class="header-header">
+            <div class="header-top header-verh wow headShake">
+                <div class="container">
+                    <div class="header-menu">
+                        <div class="logo">
+                            <a href="#"> <img
+                                    src="https://cdn4.iconfinder.com/data/icons/fruits-collection-full-color/150/Fruits_Collection-22-64.png"
+                                    alt=""> </a>
+                            <a href="#">
+                                <div class="header-name-our-firm">Фрустишка</div>
+                            </a>
+                        </div>
+
+                        <nav class="header-nav">
+                            <ul>
+                                <li>
+                                    <a href="index.html">Главная</a>
+                                </li>
+                                <li>
+                                    <a href="#">Фрукты</a>
+                                </li>
+                                <li>
+                                    <a href="other.html">Не фрукты</a>
+                                </li>
+                                <li>
+                                    <a href="we.html">О нас</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="bask-on">
+                            <img src="img/basket.png" alt="">
+                            <div class="basket-btn-text">Корзина</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="goods">
+            <div class="container">
+                <div class="goods-choice">
+                    <ul>
+                        <li class="all-fruits" >
+                            Все
+                        </li>
+                        <li class="apples">
+                            Яблоки
+                        </li>
+                        <li class="bananas">
+                            Бананы
+                        </li>
+                        <li class="citrus">
+                            Цитрусовые
+                        </li>
+                        <li class="pears">
+                            Груши
+                        </li>
+                    </ul>
+                </div>
+                <div class="paragraph">
+                    <h4>А вот и наши вкуснейшие фрукты</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic
+                        consectetur sint repellendus ex vitae ab nesciunt saepe quos at in, laudantium magnam ipsa. Ex,
+                        rem
+                        architecto atque quisquam illo eos expedita eveniet! Porro praesentium soluta numquam qui sint
+                        quas
+                        quae, possimus deleniti necessitatibus fugit quibusdam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Non aliquam asperiores, corporis dignissimos tempora labore inventore voluptas pariatur laudantium maiores quia odit optio illum accusantium magni accusamus adipisci. Maiores voluptate, enim sed rerum velit animi numquam quia saepe, suscipit quidem delectus quasi ipsa repudiandae assumenda impedit magni vero quis excepturi.</p>
+                </div>
+                <div class="goods-items">
+
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/wow.min.js'></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        //присвоение всем подтипам белый цвет на проверку к  checkGoods()
+        function restartBg(){
+            $('.all-fruits').css('background', 'white')
+            $('.apples').css('background', 'white')
+            $('.citrus').css('background', 'white')
+            $('.bananas').css('background', 'white')
+            $('.pears').css('background', 'white')
+        }
+    </script>
+    <script>
+        //проверка и создание списка в зависимости от выбора подтипа
+        var data = ''
+        $('.all-fruits').css('background', 'green')
+        function checkGoods(){
+        if ($('.all-fruits').css('background') == 'rgb(0, 128, 0) none repeat scroll 0% 0% / auto padding-box border-box') {
+            var data={
+            '1111':{
+                'name':'Яблоко Голден',
+                'cost': 149.90,
+                'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                'image':'img/apple.jpg',
+                'weight':'1 кг',
+                'proteins' : '0,5 г',
+                'fats' : '0,2 г',
+                'carbohydrates' : '10,7 г',
+                'calorie' : '53 ккал',
+                'time':'30 суток',
+                'conditions':'При температуре +3°C',
+                'country':'Азербайджан'
+            },
+            '1112':{
+                'name':'Груши Конференс',
+                'cost': 239.90,
+                'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                'image':'img/pear.jpg',
+                'weight':'1 кг',
+                'proteins' : '0,5 г',
+                'fats' : '0,5 г',
+                'carbohydrates' : '12,5 г',
+                'calorie' : '48,43 ккал',
+                'time':'14 суток',
+                'conditions':'При температуре от -1°С до +3°С',
+                'country':'-'
+            }
+        }
+        }
+        if ($('.apples').css('background') == 'rgb(0, 128, 0) none repeat scroll 0% 0% / auto padding-box border-box') {
+            data={
+            '1111':{
+                'name':'Яблоко Голден',
+                'cost': 149.90,
+                'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                'image':'img/apple.jpg',
+                'weight':'1 кг',
+                'proteins' : '0,5 г',
+                'fats' : '0,2 г',
+                'carbohydrates' : '10,7 г',
+                'calorie' : '53 ккал',
+                'time':'30 суток',
+                'conditions':'При температуре +3°C',
+                'country':'Азербайджан'
+            }}
+        }
+        if ($('.bananas').css('background') == 'rgb(0, 128, 0) none repeat scroll 0% 0% / auto padding-box border-box') {
+             data = {
+                "11112": {
+                    "name": "Банан",
+                    "cost": 20,
+                    "description": "Бананы жёлтые",
+                    "image": "img/bananas.jpg"
+                }
+            }
+        }
+        if ($('.citrus').css('background') == 'rgb(0, 128, 0) none repeat scroll 0% 0% / auto padding-box border-box') {
+             data = {
+                "11113": {
+                    "name": "Груша",
+                    "cost": 14,
+                    "description": "Груша сладкая",
+                    "image": "img/pear.jpg"
+                }
+            }
+        }
+        if ($('.pears').css('background') == 'rgb(0, 128, 0) none repeat scroll 0% 0% / auto padding-box border-box') {
+            data={
+                '1112':{
+                'name':'Груши Конференс',
+                'cost': 239.90,
+                'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                'image':'img/pear.jpg',
+                'weight':'1 кг',
+                'proteins' : '0,5 г',
+                'fats' : '0,5 г',
+                'carbohydrates' : '12,5 г',
+                'calorie' : '48,43 ккал',
+                'time':'14 суток',
+                'conditions':'При температуре от -1°С до +3°С',
+                'country':'-'
+            }
+        }}
+    return data
+    }
+    var data = checkGoods()
+    </script>
+    
+    <script>
+        //действия на нажатие подтипа
+        $('.apples').on('click', function () {
+            restartBg()
+            $('.apples').css('background', 'green')
+            data = checkGoods()
+            loadGoods()
+        });
+        $('.all-fruits').on('click', function () {
+            restartBg()
+            $('.all-fruits').css('background', 'green')
+            data = checkGoods()
+            loadGoods()
+        });
+        $('.bananas').on('click', function () {
+            restartBg()
+            $('.bananas').css('background', 'green')
+            data = checkGoods()
+            loadGoods()
+        });
+        $('.citrus').on('click', function () {
+            restartBg()
+            $('.citrus').css('background', 'green')
+            data = checkGoods()
+            loadGoods()
+        });
+        $('.pears').on('click', function () {
+            restartBg()
+            $('.pears').css('background', 'green')
+            data = checkGoods()
+            loadGoods()
+        });
+
+
+    </script>
+    <script type='text/javascript' src='js/main.js'></script>
+    <script type='text/javascript' src='js/fruits.js'></script>
+
+</body>
+
+</html>

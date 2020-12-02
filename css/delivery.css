@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #F4F9FD;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.all-hd {
+    background: #F4F9FD;
+
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header-top {
+    background: #d58300;
+    position: fixed;
+    top: 10px;
+    width: 100%;
+    z-index: 990;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-name-our-firm {
+    padding: 0 30px;
+    font-weight: 900;
+    font-family: 'Spectral SC', serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.header-name-our-firm:hover {
+    color: #fff;
+    text-shadow: 1px 0.5px 0px black, 0 0 1em black;
+    transition: 0.5s;
+}
+
+.basket-btn-text {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    opacity: 1;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.bask-on {
+    display: flex;
+    background: #39ad4d;
+    padding: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.order_basket{
+    background: #F4F9FD;
+    margin-top: 100px;
+    padding: 0 15px;
+}
+.order_basket-block{
+    margin-top: 20px;
+    /* background: white; */
+    display: flex;
+    justify-content: space-between;
+}
+.order{
+    width: 65%;
+    background: white;
+    min-height: 400px;
+    padding: 20px;
+
+    /* background: red; */
+}
+.basket{
+    width: 35%;
+    padding: 20px;
+    /* background: blue; */
+}
+.goods-cart{
+    display: flex;
+    margin: 25px 0;
+}
+.p-m-t{
+    display: flex;
+}
+.plus {
+    height: 24px;
+    width: 24px;
+    background-image: url(../img/plus.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.minus {
+    height: 24px;
+    width: 24px;
+    background-image: url(../img/minus.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.pl-min{
+    display: flex;
+    width: 70px;
+    justify-content: space-between;
+    margin: 0 20px 0 10px;
+}
+.goods-name{
+    width: 55%;
+}
+.footer {
+    margin-top: 200px;
+    min-height: 200px;
+    width: 100%;
+    background: rgb(213, 131, 0);
+}
